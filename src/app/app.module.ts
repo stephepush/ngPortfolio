@@ -5,19 +5,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ViewNavbarComponent } from './view-navbar/view-navbar.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { HomeComponentComponent } from './home-component/home-component.component';
-import { AboutComponentComponent } from './about-component/about-component.component';
-import { ProjectsComponentComponent } from './projects-component/projects-component.component';
-import { ContactComponentComponent } from './contact-component/contact-component.component';
+import { HomeComponent } from './home-component/home-component.component';
+import { AboutComponent } from './about-component/about-component.component';
+import { ProjectsComponent } from './projects-component/projects-component.component';
+import { ContactComponent } from './contact-component/contact-component.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ViewNavbarComponent,
-    HomeComponentComponent,
-    AboutComponentComponent,
-    ProjectsComponentComponent,
-    ContactComponentComponent
+    HomeComponent,
+    AboutComponent,
+    ProjectsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

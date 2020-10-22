@@ -1,27 +1,27 @@
 <nav class="navbar fixed-top navbar-expand navbar-dark bg-dark">
 
-    <a href="#" class="navbar-brand">Stephen Peters</a>
+    <a class="navbar-brand">Stephen Peters</a>
         <ul class="navbar-nav nav justify-content-end">
             <li class="nav-item">
-                <a href="#" id="home" class="nav-link">
+                <a id="home" class="nav-link" [routerLink]="['']">
                     <fa-icon [icon]="faHome"></fa-icon>
                     <span class="d-none d-sm-inline">Home</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#" id="about" class="nav-link">
+                <a id="about" class="nav-link" [routerLink]="['/about']">
                     <fa-icon [icon]="faAddressCard"></fa-icon>
                     <span class="d-none d-sm-inline">About Me</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#" id="projects" class="nav-link">
+                <a  id="projects" class="nav-link" [routerLink]="['/projects']">
                     <fa-icon [icon]="faBriefcase"></fa-icon>
                     <span class="d-none d-sm-inline">My Work</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#" id="contact" class="nav-link">
+                <a id="contact" class="nav-link" [routerLink]="['/contact']">
                     <fa-icon [icon]="faLink"></fa-icon>
                     <span class="d-none d-sm-inline">Connect</span>
                 </a>
@@ -29,3 +29,4 @@
         </ul>
     
 </nav>
+
