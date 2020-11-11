@@ -9,6 +9,14 @@
     height: 95.6vh;
     margin: 0;
     display: grid;
-    grid-template-rows: auto;
+    grid-template-rows: 37% 33% auto;
     grid-template-columns: auto;
+}
+
+.jumbo-container {
+    grid-row-start: 2;;
+}
+
+.soc-btn {
+    width: 12rem;
 }
