@@ -3,25 +3,25 @@
     <a class="navbar-brand">Stephen Peters</a>
         <ul class="navbar-nav nav justify-content-end">
             <li class="nav-item">
-                <a id="home" class="nav-link" [routerLink]="['']">
+                <a id="home" [routerLink]="['']">
                     <fa-icon [icon]="faHome"></fa-icon>
                     <span class="d-none d-sm-inline">Home</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a id="about" class="nav-link" [routerLink]="['/about']">
+                <a id="about" [routerLink]="['/about']">
                     <fa-icon [icon]="faAddressCard"></fa-icon>
                     <span class="d-none d-sm-inline">About Me</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a  id="projects" class="nav-link" [routerLink]="['/projects']">
+                <a  id="projects" [routerLink]="['/projects']">
                     <fa-icon [icon]="faBriefcase"></fa-icon>
                     <span class="d-none d-sm-inline">My Work</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a id="contact" class="nav-link" [routerLink]="['/contact']">
+                <a id="contact" [routerLink]="['/contact']">
                     <fa-icon [icon]="faLink"></fa-icon>
                     <span class="d-none d-sm-inline">Connect</span>
                 </a>
@@ -35,18 +35,18 @@
         <a href="#" class="navbar-item">
             Stephen Peters
         </a>
-        <a role="button" aria-label="menu" aria-expanded="false" class="navbar-burger burger">
+        <a (click)="toggleNavbar()" role="button" #navBurger aria-label="menu" aria-expanded="false" class="navbar-burger burger">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
         </a>
     </div>
-    <div id="navbarLinks" class="navbar-menu">
+    <div  id="navbarLinks" class="navbar-menu" #navMenu >
         <div class="navbar-end">
-            <a class="navbar-item">Home</a>
-            <a class="navbar-item">About Me</a>
-            <a class="navbar-item">My Work</a>
-            <a class="navbar-item">Contact Me</a>
+            <a id="home" [routerLink]="['']" class="navbar-item">Home</a>
+            <a id="about" [routerLink]="['/about']" class="navbar-item">About Me</a>
+            <a id="projects" [routerLink]="['/projects']" class="navbar-item">My Work</a>
+            <a id="contact" [routerLink]="['/contact']" class="navbar-item">Contact Me</a>
         </div>
     </div>
 
