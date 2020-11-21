@@ -9,7 +9,7 @@
                 <div class="card">
                     <div class="card-image">
                             <figure class="image is-4by3">
-                                <img src="https://via.placeholder.com/1280x960" alt="#">
+                                <img [src]='project.imgUrl' alt="#">
                             </figure>
                     </div>
                     <div class="card-content">
@@ -25,8 +25,8 @@
                         
                     </div>
                     <footer class="card-footer">
-                        <a href="#" class="card-footer-item">View Code</a>
-                        <a href="#" class="card-footer-item">View App</a>
+                        <a href={{project.githubLink}} target="_blank" class="card-footer-item">View Code</a>
+                        <a href={{project.appLink}} target="_blank"  class="card-footer-item">View App</a>
                     </footer> 
                   
                 </div>
