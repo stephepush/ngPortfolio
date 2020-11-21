@@ -20,7 +20,7 @@ export class ProjectsComponent implements OnInit {
     },
     {
       projectId: 1,
-      projectName: 'Random Quote Generator',
+      projectName: 'Weather Viewer',
       image: 'https://via.placeholder.com/1280x960',
       technologies: 'jQuery, jQueryUI, Bootstrap, Random Quote API, HTML, CSS',
       description: 'A random quote generator that a user can use to get new quotes with the clicke of a button.',

@@ -3,150 +3,37 @@
     <main class="container">
         <div class="columns is-multiline is-8"*ngIf='projects && projects.length'>
             
-            <div class="column is-full-mobile is-one-third-desktop is-half-tablet">
+            <div 
+                class="column is-full-mobile is-one-third-desktop is-half-tablet" *ngFor="let project of projects"
+            >
                 <div class="card">
                     <div class="card-image">
-                        <figure class="image is-4by3"><img src="https://via.placeholder.com/1280x960" alt=""></figure>
+                            <figure class="image is-4by3">
+                                <img src="https://via.placeholder.com/1280x960" alt="#">
+                            </figure>
                     </div>
                     <div class="card-content">
-                        <p class="title is-4">Quote Generator</p>
-                        <p class="subtitle is-6">Made with JS</p>
-                    </div>
-                    <div class="content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Phasellus nec iaculis mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Phasellus nec iaculis mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Phasellus nec iaculis mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Phasellus nec iaculis mauris. </p>
+                        
+                        <div>
+                            <p class="title is-4">{{project.projectName}}</p>
+                            <p class="subtitle is-6">Made using {{project.technologies}}.</p>
+                        </div>
+                        
+                        <div >
+                            <p>{{project.description}}</p>
+                        </div>
+                        
                     </div>
                     <footer class="card-footer">
-                        <p class="card-footer-item"><span><a href="#">Github</a> </span></p>
-                        <p class="card-footer-item"><span>Project</span></p>
-                    </footer>
+                        <a href="#" class="card-footer-item">View Code</a>
+                        <a href="#" class="card-footer-item">View App</a>
+                    </footer> 
+                  
                 </div>
 
             </div>
          
-            <div class="column is-full-mobile is-one-third-desktop is-half-tablet">
-                <div class="card">
-                    <div class="card-image">
-                        <figure class="image is-4by3"><img src="https://via.placeholder.com/1280x960" alt=""></figure>
-                    </div>
-                    <div class="card-content">
-                        <p class="title is-4">Quote Generator</p>
-                        <p class="subtitle is-6">Made with JS</p>
-                    </div>
-                    <div class="content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus nec iaculis mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus nec iaculis mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus nec iaculis mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus nec iaculis mauris. 
-                        </p>
-                    </div>
-                    <footer class="card-footer">
-                        <p class="card-footer-item"><span><a href="#">Github</a> </span></p>
-                        <p class="card-footer-item"><span>Project</span></p>
-                    </footer>
-                </div>
-
-            </div>
-
-            <div class="column is-full-mobile is-one-third-desktop is-half-tablet">
-                <div class="card">
-                    <div class="card-image">
-                        <figure class="image is-4by3"><img src="https://via.placeholder.com/1280x960" alt=""></figure>
-                    </div>
-                    <div class="card-content">
-                        <p class="title is-4">Quote Generator</p>
-                        <p class="subtitle is-6">Made with JS</p>
-                    </div>
-                    <div class="content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus nec iaculis mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus nec iaculis mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus nec iaculis mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus nec iaculis mauris. </p>
-                    </div>
-                    <footer class="card-footer">
-                        <p class="card-footer-item"><span><a href="#">Github</a> </span></p>
-                        <p class="card-footer-item"><span>Project</span></p>
-                    </footer>
-                </div>
-
-            </div>
-
-            <div class="column is-full-mobile is-one-third-desktop is-half-tablet">
-                <div class="card">
-                    <div class="card-image">
-                        <figure class="image is-4by3"><img src="https://via.placeholder.com/1280x960" alt=""></figure>
-                    </div>
-                    <div class="card-content">
-                        <p class="title is-4">Quote Generator</p>
-                        <p class="subtitle is-6">Made with JS</p>
-                    </div>
-                    <div class="content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus nec iaculis mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus nec iaculis mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus nec iaculis mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus nec iaculis mauris. </p>
-                    </div>
-                    <footer class="card-footer">
-                        <p class="card-footer-item"><span><a href="#">Github</a> </span></p>
-                        <p class="card-footer-item"><span>Project</span></p>
-                    </footer>
-                </div>
-
-            </div>
-
-            <div class="column is-full-mobile is-one-third-desktop is-half-tablet">
-                <div class="card">
-                    <div class="card-image">
-                        <figure class="image is-4by3"><img src="https://via.placeholder.com/1280x960" alt=""></figure>
-                    </div>
-                    <div class="card-content">
-                        <p class="title is-4">Quote Generator</p>
-                        <p class="subtitle is-6">Made with JS</p>
-                    </div>
-                    <div class="content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus nec iaculis mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus nec iaculis mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus nec iaculis mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus nec iaculis mauris. </p>
-                    </div>
-                    <footer class="card-footer">
-                        <p class="card-footer-item"><span><a href="#">Github</a> </span></p>
-                        <p class="card-footer-item"><span>Project</span></p>
-                    </footer>
-                </div>
-
-            </div>
-
-            <div class="column is-full-mobile is-one-third-desktop is-half-tablet">
-                <div class="card">
-                    <div class="card-image">
-                        <figure class="image is-4by3"><img src="https://via.placeholder.com/1280x960" alt=""></figure>
-                    </div>
-                    <div class="card-content">
-                        <p class="title is-4">Quote Generator</p>
-                        <p class="subtitle is-6">Made with JS</p>
-                    </div>
-                    <div class="content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus nec iaculis mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus nec iaculis mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus nec iaculis mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus nec iaculis mauris. </p>
-                    </div>
-                    <footer class="card-footer">
-                        <p class="card-footer-item"><span><a href="#">Github</a> </span></p>
-                        <p class="card-footer-item"><span>Project</span></p>
-                    </footer>
-                </div>
-
-            </div>
+           
 
         </div>
         
