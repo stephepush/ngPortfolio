@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { faLink } from '@fortawesome/free-solid-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-projects-component',
@@ -6,6 +8,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./projects-component.component.css']
 })
 export class ProjectsComponent implements OnInit {
+
+  faLink = faLink;
+  faGithub = faGithub;
+
   pageTitle: string = 'My Work';
 
   projects: any[] = [
