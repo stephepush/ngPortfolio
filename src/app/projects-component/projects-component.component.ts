@@ -20,6 +20,7 @@ export class ProjectsComponent implements OnInit {
       projectName: 'Random Quote Generator',
       imgUrl: 'https://via.placeholder.com/1280x961',
       technologies: 'jQuery, jQueryUI, Bootstrap, Random Quote API, HTML, CSS',
+      techArray: ['jQuery', 'vanilla js', 'BootStrap', 'third party web API'],
       description: 'A random quote generator that a user can use to get new quotes with the clicke of a button.',
       githubLink: 'https://www.github.com',
       appLink: 'https://www.github.com'
@@ -29,15 +30,17 @@ export class ProjectsComponent implements OnInit {
       projectName: 'Weather Viewer',
       imgUrl: 'https://via.placeholder.com/1280x962',
       technologies: 'jQuery, jQueryUI, Bootstrap, Random Quote API, HTML, CSS',
+      techArray: ['jQuery', 'vanilla js', 'BootStrap', 'third party web API'],
       description: 'A random quote generator that a user can use to get new quotes with the clicke of a button.',
       githubLink: 'github.com',
       appLink: 'github.com'
     },
     {
-      projectId: 1,
+      projectId: 2,
       projectName: 'Weather Viewer',
       imgUrl: 'https://via.placeholder.com/1280x963',
       technologies: 'jQuery, jQueryUI, Bootstrap, Random Quote API, HTML, CSS',
+      techArray: ['jQuery', 'vanilla js', 'BootStrap', 'third party web API'],
       description: 'A random quote generator that a user can use to get new quotes with the clicke of a button.',
       githubLink: 'http://www.github.com',
       appLink: 'https://www.github.com'

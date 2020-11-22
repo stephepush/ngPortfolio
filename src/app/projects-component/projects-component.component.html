@@ -16,11 +16,26 @@
                         
                         <div>
                             <p class="title is-4">{{project.projectName}}</p>
-                            <p class="subtitle is-6">Made using {{project.technologies}}.</p>
+                           
                         </div>
-                        
+
+                        <div>
+                            <ul>
+                                <li 
+                                *ngFor="let item of project.techArray"
+                                class="project-item"
+                                >
+                                    <span class="tag is-light">
+                                        {{item}} 
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                            
                         <div >
-                            <p>{{project.description}}</p>
+                            <p>
+                                {{project.description}}
+                            </p>
                         </div>
                         
                     </div>
