@@ -2,9 +2,23 @@
     <h1>{{pageTitle}}</h1>
     <main class="container">
         <div class="columns is-multiline is-8"*ngIf='projects && projects.length'>
+            <div class="column is-full">
+                <div class="field is-horizontal select is-primary is-focused is-large is-rounded">
+                    <div class="field-label is-large">
+                        <label for="select" class="label is-large">Select Project Type:</label>
+                    </div>
+
+                    <select name="" id="">
+                        <option value="">React Apps</option>
+                        <option value="">VanillaJS / jQuery</option>
+                        <option value="">FullStack Experiments</option>
+                        
+                    </select>
+                </div>
+            </div>
             
             <div 
-                class="column is-full-mobile is-one-third-desktop is-half-tablet" *ngFor="let project of projects"
+                class="column is-full-mobile is-one-third-widescreen is-half-desktop is-half-tablet " *ngFor="let project of projects"
             >
                 <div class="card">
                     <div class="card-image">
