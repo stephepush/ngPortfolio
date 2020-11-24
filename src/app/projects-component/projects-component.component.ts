@@ -22,6 +22,7 @@ export class ProjectsComponent implements OnInit {
       technologies: 'jQuery, jQueryUI, Bootstrap, Random Quote API, HTML, CSS',
       techArray: ['jQuery', 'vanilla js', 'BootStrap', 'third party web API'],
       description: 'A random quote generator that a user can use to get new quotes with the clicke of a button.',
+      type: 'jquery',
       githubLink: 'https://www.github.com',
       appLink: 'https://www.github.com'
     },
@@ -33,6 +34,7 @@ export class ProjectsComponent implements OnInit {
       techArray: ['jQuery', 'vanilla js', 'BootStrap', 'third party web API'],
       description: 'A random quote generator that a user can use to get new quotes with the clicke of a button.',
       githubLink: 'github.com',
+      type: 'javascript',
       appLink: 'github.com'
     },
     {
@@ -43,6 +45,7 @@ export class ProjectsComponent implements OnInit {
       techArray: ['jQuery', 'vanilla js', 'BootStrap', 'third party web API'],
       description: 'A random quote generator that a user can use to get new quotes with the clicke of a button.',
       githubLink: 'http://www.github.com',
+      type: 'javascript',
       appLink: 'https://www.github.com'
     }
   ];
