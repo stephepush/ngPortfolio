@@ -2,3 +2,9 @@
     list-style-type: none;
     display: inline;
 }
+
+.project-description {
+    height: 8rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}

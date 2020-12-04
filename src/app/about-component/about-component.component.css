@@ -2,14 +2,6 @@
     background-color: #FCCAAF;
     color: #22306C;
     
-   
-    height: 95.6vh;
-    margin: 0;
-    display: grid;
-    grid-template-rows: 37% 33% auto;
-    grid-template-columns: auto;
+
 }
 
-.jumbo-container {
-    grid-row-start: 2;;
-}
