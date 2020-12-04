@@ -45,9 +45,8 @@ export class ProjectsComponent implements OnInit {
       technologies: 'jQuery, jQueryUI, Bootstrap, Random Quote API, HTML, CSS',
       techArray: ['jQuery', 'vanilla js', 'BootStrap', 'third party web API'],
       description: 'A random quote generator that a user can use to get new quotes with the clicke of a button.',
-      githubLink: 'github.com',
-      type: 'javascript',
-      appLink: 'github.com'
+      githubLink: 'https://github.com/stephepush/weatherApp',
+      appLink: 'https://stephepush.github.io/weatherApp/'
     },
     {
       projectId: 3,
@@ -56,9 +55,8 @@ export class ProjectsComponent implements OnInit {
       technologies: 'jQuery, jQueryUI, Bootstrap, Random Quote API, HTML, CSS',
       techArray: ['jQuery', 'vanilla js', 'BootStrap', 'third party web API'],
       description: 'A random quote generator that a user can use to get new quotes with the clicke of a button.',
-      githubLink: 'http://www.github.com',
-      type: 'javascript',
-      appLink: 'https://www.github.com'
+      githubLink: 'https://github.com/stephepush/randomQuoteGenerator',
+      appLink: 'https://stephepush.github.io/randomQuoteGenerator/'
     }
   ];
   constructor() { }
