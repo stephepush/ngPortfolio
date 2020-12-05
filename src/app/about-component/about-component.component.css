@@ -1,7 +1,15 @@
 #about {
     background-color: #FCCAAF;
     color: #22306C;
-    height: 96vh;
+    height: auto;
+    
+}
 
+main {
+    padding-bottom: 5rem;
+}
+
+img {
+    height: 650px;
 }
 
