@@ -11,16 +11,18 @@
                 *ngFor="let linkItem of socLinks"
             >
                 <a [href]="linkItem.link">
-                   <div class="card">
-                        <div class="card-content">
-                            <p class="title">
+                   <div class="card" [ngStyle]="{'background-color': linkItem.backgroundColor }">
+                        <div class="card-content" >
+                            <p class="title" [ngStyle]="{'color': 'white'}">
                                 <span>
                             
                                     <!-- <fa-icon [icon]='linkItem.fontAwesome'></fa-icon> -->
-                                    <fa-icon [icon]="linkItem.fontAwesome"></fa-icon>
+                                    <fa-icon [icon]="linkItem.fontAwesomeAlias" size="2x" [styles]="{'color': 'white'}"></fa-icon>
                                 </span>
+                                &nbsp;
+                                {{linkItem.network}}
                             </p>
-                            <p class="subtitle">{{linkItem.link}}</p>
+                            
                         </div>
                     </div> 
                 </a>

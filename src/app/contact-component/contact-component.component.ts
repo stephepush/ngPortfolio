@@ -20,17 +20,23 @@ export class ContactComponent implements OnInit {
   socLinks: any[] = [
     {
       linkId: 0,
-      fontAwesome: this.Linkedin,
+      fontAwesomeAlias: this.Linkedin,
+      network: 'Linkedin',
+      backgroundColor: '#0a66c2',
       link: 'https://www.linkedin.com/in/stephpdev/' 
     },
     {
       linkId: 1,
-      fontAwesome: this.Github,
+      fontAwesomeAlias: this.Github,
+      network: 'Github',
+      backgroundColor: '#999',
       link: 'https://github.com/stephepush' 
     },
     {
       linkId: 2,
-      fontAwesome: this.Twitter,
+      fontAwesomeAlias: this.Twitter,
+      network: 'Twitter',
+      backgroundColor: '#1da1f2',
       link: 'https://twitter.com/BxBytesSteph' 
     }
 
