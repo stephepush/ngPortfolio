@@ -17,6 +17,24 @@ export class ContactComponent implements OnInit {
   github = faGithub;
   twitter = faTwitter;
 
+  socLinks: any[] = [
+    {
+      linkId: 0,
+      fontAwesome: 'linkedinIn',
+      link: 'https://www.linkedin.com/in/stephpdev/' 
+    },
+    {
+      linkId: 1,
+      fontAwesome: 'github',
+      link: 'https://github.com/stephepush' 
+    },
+    {
+      linkId: 2,
+      fontAwesome: 'twitter',
+      link: 'hhttps://twitter.com/BxBytesSteph' 
+    }
+
+  ]
 
   constructor() { }
 

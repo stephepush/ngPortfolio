@@ -4,10 +4,22 @@
             <h2 class="title contact-heading">Contact Me</h2>
             <h3 class="subtitle contact-heading">Feel free to contact me at these social media links:</h3>
 
-            <div class="card">
-                <div class="card-content">
-                    <p class="title">Social Media</p>
-                    <p class="subtitle">Social Media Handle?</p>
+            <div 
+                class="column is-full-mobile 
+                        is-one-third-widescreen 
+                        is-half-desktop is-half-tablet"
+                *ngFor="let site of socLinks"
+            >
+                <div class="card">
+                    <div class="card-content">
+                        <p class="title">
+                            <span>
+                        
+                                <fa-icon [icon]='site.fontAwesome'></fa-icon>
+                            </span>
+                        </p>
+                        <p class="subtitle">Lol</p>
+                    </div>
                 </div>
             </div>
         </main>
