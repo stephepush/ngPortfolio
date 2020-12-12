@@ -10,18 +10,21 @@
                         is-half-desktop is-half-tablet"
                 *ngFor="let linkItem of socLinks"
             >
-                <div class="card">
-                    <div class="card-content">
-                        <p class="title">
-                            <span>
-                        
-                                <fa-icon [icon]='linkItem.fontAwesome'></fa-icon>
-                                <!-- <fa-icon [icon]=github></fa-icon> -->
-                            </span>
-                        </p>
-                        <p class="subtitle">{{linkItem.link}}</p>
-                    </div>
-                </div>
+                <a [href]="linkItem.link">
+                   <div class="card">
+                        <div class="card-content">
+                            <p class="title">
+                                <span>
+                            
+                                    <!-- <fa-icon [icon]='linkItem.fontAwesome'></fa-icon> -->
+                                    <fa-icon [icon]="linkItem.fontAwesome"></fa-icon>
+                                </span>
+                            </p>
+                            <p class="subtitle">{{linkItem.link}}</p>
+                        </div>
+                    </div> 
+                </a>
+                
             </div>
         </main>
     </div>

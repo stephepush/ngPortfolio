@@ -13,24 +13,24 @@ import { faWordpress } from '@fortawesome/free-brands-svg-icons';
 })
 export class ContactComponent implements OnInit {
 
-  linkedinIn = faLinkedinIn;
-  github = faGithub;
-  twitter = faTwitter;
+  Linkedin = faLinkedinIn;
+  Github = faGithub;
+  Twitter = faTwitter;
 
   socLinks: any[] = [
     {
       linkId: 0,
-      fontAwesome: 'linkedinIn',
+      fontAwesome: this.Linkedin,
       link: 'https://www.linkedin.com/in/stephpdev/' 
     },
     {
       linkId: 1,
-      fontAwesome: 'github',
+      fontAwesome: this.Github,
       link: 'https://github.com/stephepush' 
     },
     {
       linkId: 2,
-      fontAwesome: 'twitter',
+      fontAwesome: this.Twitter,
       link: 'https://twitter.com/BxBytesSteph' 
     }
 
