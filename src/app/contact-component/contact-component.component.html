@@ -8,17 +8,18 @@
                 class="column is-full-mobile 
                         is-one-third-widescreen 
                         is-half-desktop is-half-tablet"
-                *ngFor="let site of socLinks"
+                *ngFor="let linkItem of socLinks"
             >
                 <div class="card">
                     <div class="card-content">
                         <p class="title">
                             <span>
                         
-                                <fa-icon [icon]='site.fontAwesome'></fa-icon>
+                                <fa-icon [icon]='linkItem.fontAwesome'></fa-icon>
+                                <!-- <fa-icon [icon]=github></fa-icon> -->
                             </span>
                         </p>
-                        <p class="subtitle">Lol</p>
+                        <p class="subtitle">{{linkItem.link}}</p>
                     </div>
                 </div>
             </div>

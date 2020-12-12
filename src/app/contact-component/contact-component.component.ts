@@ -31,7 +31,7 @@ export class ContactComponent implements OnInit {
     {
       linkId: 2,
       fontAwesome: 'twitter',
-      link: 'hhttps://twitter.com/BxBytesSteph' 
+      link: 'https://twitter.com/BxBytesSteph' 
     }
 
   ]
