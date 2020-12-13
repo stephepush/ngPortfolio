@@ -11,5 +11,6 @@ main {
 
 img {
     height: 650px;
+    border-radius: 100%;
 }
 
