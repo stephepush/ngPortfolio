@@ -26,19 +26,21 @@
                 with Angular and BulmaCSS.
             </p>
 
-            <p class="column is-size-3-fullhd is-size-3-widescreen is-size-3-desktop is-size-4-tablet is-size-4-touch block">
+            <p
+                class="column is-size-3-fullhd is-size-3-widescreen is-size-3-desktop is-size-4-tablet is-size-4-touch block">
                 I decided to learn how to code a few years ago because I always wanted to learn to
                 program the powerful machines that we can now hold in our palms.
                 I was always interested in technology and finally decided to take the dive. Before that,
                 I received a degree in social science from the City College of New York.
             </p>
 
-            <p class="column is-size-3-fullhd is-size-3-widescreen is-size-3-desktop is-size-4-tablet is-size-4-touch block">
+            <p
+                class="column is-size-3-fullhd is-size-3-widescreen is-size-3-desktop is-size-4-tablet is-size-4-touch block">
                 When I'm not coding, I enjoy making pizza from scratch, playing videogames and learning more about retro
                 game emulation.
             </p>
         </main>
-<!--         <div class="column">
+        <!--         <div class="column">
             <section class="column is-half-desktop is-half-widescreen is-full-mobile">
                 <h3 class="column subtitle is-3 has-text-weight-medium">
                     Techonologies I've Completed Projects With:
@@ -61,6 +63,21 @@
                 </ul>
             </section>
         </div> -->
+        <div class="columns container is-multiline is-centered" *ngFor="let list of techLists">
+            <div class="column is-four-fifths-mobile is-two-fifths-widescreen is-two-fifths-desktop is-half-tablet">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-header-title">{{list.title}}</div>
+                    </div>
+                    <div class="card-content">
+                        <ul>
+                            <li *ngFor="let item of list.techs">{{item}}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
 
 
 

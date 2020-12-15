@@ -1,8 +1,8 @@
 #about {
     background-color: #FCCAAF;
     color: #22306C;
-    height: auto;
-    
+    height: 110%;
+    padding-bottom: 10%;
 }
 
 .card-image>figure {

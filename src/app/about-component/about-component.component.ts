@@ -8,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 export class AboutComponent implements OnInit {
   pageTitle: string = 'About Me';
 
-  techlinks: any[] = [
-    {completedTech: ['HTML/CSS/JavaScript', 'ReactJS', 'BootStrap', 'jQuery', 'Node', 'PostGRES', 'WordPress', 'Git']},
-    {experimentedTech: ['Angular', 'PHP', 'MySQL', 'Ruby/Rails', 'Python', 'Django' ]}
+  techLists: any[] = [
+    {
+      techs: ['HTML/CSS/JavaScript', 'ReactJS', 'BootStrap', 'jQuery', 'Node', 'PostGRES', 'WordPress', 'Git'],
+      title: "Technologies I've completed projects with:"
+    },
+    {
+      techs: ['Angular', 'PHP', 'MySQL', 'Ruby/Rails', 'Python', 'Django' ],
+      title: "Tecnologies I've experimented with:"
+    }
   ]
 
   constructor() { }
