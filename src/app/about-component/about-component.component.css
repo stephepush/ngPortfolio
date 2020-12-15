@@ -5,12 +5,9 @@
     
 }
 
-main {
-    padding-bottom: 5rem;
-}
-
-img {
-    height: 650px;
-    border-radius: 100%;
+.card-image>figure {
+    background-color: #FCCAAF;
+    box-shadow: none;
+    outline-color: #FCCAAF;
 }
 
