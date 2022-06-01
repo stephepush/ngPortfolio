@@ -10,11 +10,11 @@ export class AboutComponent implements OnInit {
 
   techLists: any[] = [
     {
-      techs: ['HTML/CSS/JavaScript', 'ReactJS', 'BootStrap', 'jQuery', 'Node', 'PostGRES', 'WordPress', 'Git'],
+      techs: ['HTML/CSS/JavaScript', 'ReactJS', 'BootStrap', 'jQuery', 'Node', 'PostgreSQL', 'WordPress', 'Git'],
       title: "Technologies I've completed projects with:"
     },
     {
-      techs: ['Angular', 'PHP', 'MySQL', 'Ruby/Rails', 'Python', 'Django' ],
+      techs: ['Angular', 'PHP', 'MySQL/MariaDB', 'Ruby/Rails', 'Python', 'Django' ],
       title: "Tecnologies I've experimented with:"
     }
   ]
